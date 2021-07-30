@@ -3,7 +3,7 @@
 import { Bot } from "https://deno.land/x/grammy@v1.2.0/mod.ts";
 import "https://deno.land/x/dotenv@v2.0.0/load.ts";
 
-const bot = new Bot(Deno.env.get("TOKEN") as string);
+const bot = new Bot(Deno.env.get("NIPPTOKEN") as string);
 
 const isMultiple = (a: number, b: number) => a % b === 0;
 bot.command(
